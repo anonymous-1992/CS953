@@ -1,0 +1,61 @@
+{
+  "trec_car": {
+    "all_but_benchmark": "/home/sk1015/unprocessedAllButBenchmark.v2.1/unprocessedAllButBenchmark.Y2.cbor",
+    "paragraph_corpus": "",
+    "indexing": {
+      "paragraph_index": "/home/sk1015/aspect.lucene",
+      "section_index" : "/home/sk1015/aspect.lucene",
+      "build_index": false,
+      "entity_index" : "/home/sk1015/aspect.lucene"
+    },
+    "outlines": {
+      "train": {
+        "article": "/home/sk1015/benchmarkY1/benchmarkY1-train/train.pages.cbor",
+        "hierarchical": "/home/sk1015/benchmarkY1/benchmarkY1-train/train.pages.cbor"
+      },
+      "test" : {
+        "article": "/home/sk1015/benchmarkY1/benchmarkY1-test/test.pages.cbor",
+        "hierarchical": "/home/sk1015/benchmarkY1/benchmarkY1-test/test.pages.cbor"
+      }
+    },
+    "qrel_files" : {
+      "train" : {
+        "article_passage": "/home/sk1015/benchmarkY1/benchmarkY1-train/train.pages.cbor-article.qrels",
+        "hierarchical_passage": "/home/sk1015/benchmarkY1/benchmarkY1-train/train.pages.cbor-hierarchical.qrels",
+        "article_entity": "/home/sk1015/benchmarkY1/benchmarkY1-train/train.pages.cbor-article.entity.qrels",
+        "hierarchical_entity": "/home/sk1015/benchmarkY1/benchmarkY1-train/train.pages.cbor-hierarchical.entity.qrels",
+        "section" : "benchmarkY1/benchmarkY1-train/train.pages.cbor-sections.qrels"
+      },
+      "test" : {
+        "article_passage": "/home/sk1015/benchmarkY1/benchmarkY1-test/test.pages.cbor-article.qrels",
+        "hierarchical_passage": "/home/sk1015/benchmarkY1/benchmarkY1-test/test.pages.cbor-hierarchical.qrels",
+        "article_entity": "/home/sk1015/benchmarkY1/benchmarkY1-test/test.pages.cbor-article.entity.qrels",
+        "hierarchical_entity": "/home/sk1015/benchmarkY1/benchmarkY1-test/test.pages.cbor-hierarchical.entity.qrels",
+        "section" : "benchmarkY1/benchmarkY1-test/test.pages.cbor-sections.qrels"
+      }
+    },
+    "trec_eval_executable": "/home/sk1015/trec_eval.8.1/trec_eval"
+  },
+  "rank_lib": {
+    "executable_loc": "/home/sk1015/RankLin-2.11.jar"
+  },
+  "database": {
+    "corpus_db": {
+      "build_db": false,
+      "db_loc": "db",
+      "build_outline": false,
+      "build_all_but_benchmark": true,
+      "build_transitive": false
+    },
+    "corpus_graph": {
+      "neo4j_username": "",
+      "neo4j_password": "",
+      "neo4j_url": "",
+      "parse_graph": false,
+      "build_para_graph" : false,
+      "build_page_graph" : false
+    }
+  },
+  "methods": {
+  }
+}
