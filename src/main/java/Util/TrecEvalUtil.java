@@ -129,7 +129,7 @@ public class TrecEvalUtil {
             }
         }
 
-        private static final Set<Integer> accepted_precision_values = Set.of(5, 10, 15, 20, 30, 100, 200, 500, 1000);
+        private static final Set<Integer> accepted_precision_values = new HashSet<>(Arrays.asList(5, 10, 15, 20, 30, 100, 200, 500, 1000));
         private static final String accepted_prec_vals =
                 accepted_precision_values.stream().map(Object::toString).collect(Collectors.joining(", "));
 
